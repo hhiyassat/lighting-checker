@@ -1,0 +1,40 @@
+{
+  "_comment": "متطلبات الإنارة لكل نوع غرفة. القيم هنا أمثلة شائعة للمساكن وليست منقولة من معيار مُلزِم (EN 12464-1 لا يغطي المساكن). استبدلها بقيم الكود المعتمد لديكم. em_lx: متوسط الإضاءة المحافَظ عليه؛ uo: الحد الأدنى للانتظام Emin/Em؛ ugr_max: null يعني لا يُفحص؛ ra: مؤشر تجسيد اللون (يُفحص إن وُجد في الكتالوج).",
+  "source": "قيم أمثلة للمساكن (غير مُلزِمة)",
+  "provisional": true,
+
+  "types": {
+    "living":   {"em_lx": 150, "uo": 0.3, "ugr_max": null, "ra": 80},
+    "bedroom":  {"em_lx": 100, "uo": 0.3, "ugr_max": null, "ra": 80},
+    "kitchen":  {"em_lx": 300, "uo": 0.4, "ugr_max": null, "ra": 80},
+    "dining":   {"em_lx": 200, "uo": 0.3, "ugr_max": null, "ra": 80},
+    "bathroom": {"em_lx": 200, "uo": 0.4, "ugr_max": null, "ra": 80},
+    "storage":  {"em_lx": 100, "uo": 0.25, "ugr_max": null, "ra": 60},
+    "laundry":  {"em_lx": 200, "uo": 0.4, "ugr_max": null, "ra": 80},
+    "corridor": {"em_lx": 100, "uo": 0.4, "ugr_max": null, "ra": 40},
+    "plant":    {"em_lx": 200, "uo": 0.4, "ugr_max": 25, "ra": 60},
+    "office":   {"em_lx": 500, "uo": 0.6, "ugr_max": 19, "ra": 80}
+  },
+
+  "aliases": {
+    "living":   ["living room", "living", "salon", "majlis", "صالة", "معيشة", "صالون", "séjour", "salle de séjour"],
+    "bedroom":  ["bedroom", "master bedroom", "guard room", "نوم", "غرفة نوم", "chambre"],
+    "kitchen":  ["kitchen", "مطبخ", "cuisine"],
+    "dining":   ["dining", "طعام", "salle à manger"],
+    "bathroom": ["bath", "bathroom", "wc", "toilet", "حمام", "salle de bain"],
+    "storage":  ["storage", "store", "مخزن"],
+    "laundry":  ["laundry", "غسيل", "buanderie"],
+    "corridor": ["corridor", "lobby", "stair", "ممر", "درج", "couloir"],
+    "plant":    ["elevator room", "machine room", "غرفة مصعد"],
+    "office":   ["office", "مكتب", "bureau"]
+  },
+
+  "emergency": {
+    "escape_route_min_lx": 1.0,
+    "escape_route_uniformity_max_ratio": 40,
+    "anti_panic_min_lx": 0.5,
+    "anti_panic_min_area_m2": 60,
+    "emergency_block_regex": "(EMERG|EXIT|(^|[-_ ])EM($|[-_ ]))",
+    "emergency_layers": ["E-LITE-EMER"]
+  }
+}

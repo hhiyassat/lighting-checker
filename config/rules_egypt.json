@@ -1,0 +1,119 @@
+{
+  "_comment": "قيم em_lx تُقرأ عند كل تشغيل من ملف الكود codes/egyptian-code.pdf (code_pdf) حسب pdf_row؛ إن كُتبت قيمة في الملف يجب أن تطابق الـ PDF. قيم الكود المصري 308، ملحق م1 جدول م1 (المبانى السكنية). القيمة متوسط شدة الإضاءة العامة في الفراغ؛ قيم الأسطح (أسطح المطبخ 500، سطح المكتب 500، القراءة 300) إضاءة موضعية لا تُفحص هنا. الكود لا يحدد للإنارة الداخلية حداً للانتظام ولا للبهر (بنود 6-3 للطرق)، فـ uo و ugr_max = null. معامل الصيانة حسب البند 6-2/3(ث): 0.77–0.90 بصيانة دورية، 0.67–0.77 بغير انتظام. أنواع em_lx = null ليس لها بند وتؤخذ مؤقتاً من fallback.",
+  "source": "الكود المصري لأسس تصميم وشروط تنفيذ أعمال الإنارة — كود 308 (ك.ب.ع 100، إصدار 2007)، ملحق م1 جدول م1: المبانى السكنية",
+  "fallback": "rules_residential.json",
+  "types": {
+    "living": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": "جدول م1 / المبانى السكنية",
+      "pdf_row": "غرفة معيشة/عام"
+    },
+    "dining": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": "جدول م1 / المبانى السكنية",
+      "pdf_row": "غرفة طعام"
+    },
+    "bedroom": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": "جدول م1 / المبانى السكنية",
+      "pdf_row": "غرفة نوم"
+    },
+    "kitchen": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": "جدول م1 / المبانى السكنية",
+      "pdf_row": "مطبخ/عام"
+    },
+    "bathroom": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": "جدول م1 / المبانى السكنية",
+      "pdf_row": "حمام"
+    },
+    "corridor": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": "جدول م1 / المبانى السكنية",
+      "pdf_row": "ممرات"
+    },
+    "stair": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": "جدول م1 / المبانى السكنية",
+      "pdf_row": "سلالم"
+    },
+    "office": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": "جدول م1 / المبانى السكنية",
+      "pdf_row": "حجرة مكتب/عام"
+    },
+    "storage": {
+      "em_lx": null,
+      "clause": "لا بند في جدول م1 للمساكن"
+    },
+    "laundry": {
+      "em_lx": null,
+      "clause": "لا بند في جدول م1 للمساكن"
+    },
+    "plant": {
+      "em_lx": null,
+      "clause": "لا بند في جدول م1 للمساكن"
+    }
+  },
+  "aliases": {
+    "corridor": [
+      "corridor",
+      "lobby",
+      "hall",
+      "ممر",
+      "ممرات",
+      "ردهة",
+      "couloir"
+    ],
+    "stair": [
+      "stair",
+      "stairs",
+      "staircase",
+      "درج",
+      "سلم",
+      "سلالم",
+      "escalier"
+    ],
+    "office": [
+      "office",
+      "study",
+      "مكتب",
+      "bureau"
+    ]
+  },
+  "spacing": {
+    "max_ratio": 1.5,
+    "clause": "كود 308، البند 6-2/3 (د): نسبة المسافة البينية/الارتفاع d/h لا تزيد عن 1.5؛ h ارتفاع التعليق عن مستوى الشغل (التعريفات، الباب 1-4)"
+  },
+  "code_pdf": {
+    "path": "../codes/egyptian-code.pdf",
+    "table": "egypt_308_m1",
+    "group": "المبانى السكنية",
+    "page": 343
+  }
+}

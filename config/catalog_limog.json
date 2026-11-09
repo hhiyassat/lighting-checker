@@ -1,0 +1,18 @@
+{
+  "_comment": "ربط أسماء الـ blocks بالبيانات الضوئية. القيم مأخوذة من جدول الرموز (Legend) في Limog_elec.dwg بالقرب المكاني؛ راجعها. ies: مسار ملف IES أو LDT نسبةً إلى مجلد config، أو null لاستعمال توزيع عام (distribution).",
+  "_distribution_values": "downlight = لامبرتي نحو الأسفل؛ diffuse = متساوي الاتجاهات (كرة/ثريّا)؛ wall = جداري؛ ignore = لا يُحسب",
+
+  "ESL41":  {"description": "Surface round LED spot 24W", "watts": 24, "lumens": 1920, "mounting": "ceiling", "distribution": "downlight", "ies": null, "luminous_area_m2": 0.03},
+  "GL":     {"description": "Surface LED 18W (TODO: or 10W/900lm spot — legend ambiguous)", "watts": 18, "lumens": 1440, "mounting": "ceiling", "distribution": "downlight", "ies": null, "luminous_area_m2": 0.03},
+  "CR":     {"description": "Round ceiling LED 15W bathroom, IP44", "watts": 15, "lumens": 1100, "mounting": "ceiling", "distribution": "downlight", "ies": null, "luminous_area_m2": 0.04, "room_hint": "bathroom"},
+  "KIT":    {"description": "LED batten 48W, IP44", "watts": 48, "lumens": 6000, "mounting": "ceiling", "distribution": "downlight", "ies": null, "luminous_area_m2": 0.09},
+  "ESL28":  {"description": "LED batten 40W, IP44", "watts": 40, "lumens": 4000, "mounting": "ceiling", "distribution": "downlight", "ies": null, "luminous_area_m2": 0.08},
+  "F1X36":  {"description": "LED batten 20W, IP44", "watts": 20, "lumens": 2000, "mounting": "ceiling", "distribution": "downlight", "ies": null, "luminous_area_m2": 0.06},
+  "CH3":    {"description": "Chandelier 8 x 4W filament 400lm", "watts": 32, "lumens": 3200, "mounting": "pendant", "suspension_m": 0.8, "distribution": "diffuse", "ies": null, "luminous_area_m2": 0.5},
+  "wall3":  {"description": "Wall globe LED 30-40W, IP54 (TODO: lumens not in legend)", "watts": 30, "lumens": 2400, "mounting": "wall", "mount_height_m": 2.2, "distribution": "diffuse", "ies": null, "luminous_area_m2": 0.07},
+
+  "Wall Mounted 2X26 FLC Uplight - IP44":          {"distribution": "ignore"},
+  "Wall Mounted Glob 1X50W Halogen lamp - IP65":   {"distribution": "ignore"},
+  "Decorative Spotlight 50W Halogen lamp - IP20":  {"distribution": "ignore"},
+  "Floor Mounted 1X36 FLC Uplight - IP67":         {"distribution": "ignore"}
+}

@@ -1,0 +1,77 @@
+{
+  "_comment": "جدول متطلبات الكود الأردني. انقل من كودة الإنارة الداخلية (مجلس البناء الوطني الأردني) القيمة لكل نوع غرفة مع رقم الجدول/البند في clause. أي نوع قيمته em_lx = null يُؤخذ مؤقتاً من ملف fallback ويُعلَّم في التقرير بأنه «مؤقت». em_lx متوسط الإضاءة على مستوى العمل؛ uo الانتظام Emin/Em؛ ugr_max حد الإبهار (null = لا يُفحص)؛ ra مؤشر تجسيد اللون.",
+  "source": "كودة الإنارة الداخلية — مجلس البناء الوطني الأردني (الطبعة: TODO)",
+  "fallback": "rules_residential.json",
+  "types": {
+    "living": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": ""
+    },
+    "bedroom": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": ""
+    },
+    "kitchen": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": ""
+    },
+    "dining": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": ""
+    },
+    "bathroom": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": ""
+    },
+    "storage": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": ""
+    },
+    "laundry": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": ""
+    },
+    "corridor": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": ""
+    },
+    "plant": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": ""
+    },
+    "office": {
+      "em_lx": null,
+      "uo": null,
+      "ugr_max": null,
+      "ra": null,
+      "clause": ""
+    }
+  }
+}
